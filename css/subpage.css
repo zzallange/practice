@@ -1,0 +1,175 @@
+/* ### 기술교육 ### */
+.education .sec_top {
+	background-image: url('../images/sub/sectop_education.png');
+}
+.education .sec_education {
+	padding: 40px 0 140px;
+}
+/* Label Style */
+.edu_ing {background-color: #485AA1;/* 교육진행중 */}
+.edu_end {background-color: #CACACA;/* 교육 종료 */}
+.edu_recept {background-color: #DB4A98;/* 접수예정 */}
+.edu_recept_ing {background-color: #29BF6A;/* 접수 중 */}
+.edu_recept_end {background-color: #6F6F6F;/* 접수마감 */}
+
+/* SECTION > edu_content */
+.edu_content .notice_txt {
+	text-align:right;
+}
+.edu_content .notice_txt p {
+	font-size:14px;
+	line-height: 1.5;
+	font-weight: 500;
+	color: #6F6F6F;
+}
+/* edu_column */
+.edu_content .edu_column {
+	margin-top:40px;
+}
+.edu_column .edu_schedule {
+	text-align:center;
+}
+
+/* 교육과정 schedule */
+.edu_schedule .period {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.edu_schedule .period .arrow {
+	display: inline-block;
+	width: 28px;
+	height:28px;
+}
+.edu_schedule .period .arrow img {
+	width: 10px;
+	opacity: .5;
+}
+.edu_schedule .period .arrow.active img {
+	opacity: 1;
+}
+.edu_schedule .period .arrow.next {
+	transform: rotate(180deg);
+}
+.edu_schedule .period .year {
+	margin:0 24px;
+	font-size:40px;
+	font-weight: 600;
+	color: #282828;
+}
+.edu_schedule .btn_edu_info {
+	display: inline-block;
+	margin-top:24px;
+	padding:11px 20px;
+	border: 1px solid #959595;
+	border-radius: 4px;
+	background: #f9f9f9;
+}
+.edu_schedule .btn_edu_info span {
+	font-size:16px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+/* 교육과정 curriculum */
+.curriculum_cont .curriculum_tit {
+	margin-top:60px;
+	padding-bottom:24px;
+	border-bottom: 1px solid #282828;
+	font-size:3.2rem;
+}
+/* 교육과정 리스트 */
+.curriculum_list .edu_item {
+	position:relative;
+	display: flex;
+	align-items: center;
+	padding:49px 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+@media (max-width:1400px){
+	.curriculum_list .edu_item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2.4rem;
+		padding:44px 0;
+	}
+}
+/* 교육과정 제목 */
+.curriculum_list .edu_item .item_tit {
+	display: flex;
+	align-items: center;
+	flex: 1.05;
+}
+.curriculum_list .edu_item .item_tit .label {
+	display: inline-block;
+	margin-right: 2.2rem;
+	width:98px;
+	height:32px;
+	border-radius: 20px;
+	text-align:center;
+	font-size:1.4rem;
+	line-height: 32px;
+	font-weight: 500;
+	color: #fff;
+}
+.curriculum_list .edu_item .item_tit .edu_link {
+	font-size:3rem;
+	font-weight:600;
+	line-height: 1.2;
+}
+@media (max-width:1400px) {
+	.curriculum_list .edu_item .item_tit {
+		flex: initial;
+		width: 100%;
+	}
+}
+/* 교육과정 정보리스트 */
+.curriculum_list .edu_item .item_info {
+	display: flex;
+	flex: 2.3;
+}
+@media (max-width:1400px){
+	.curriculum_list .edu_item .item_info {
+		flex: initial;
+		width:100%;
+	}
+}
+.curriculum_list .edu_item .item_info li:first-child {
+	margin-right: 9%;
+}
+.curriculum_list .edu_item .item_info dl {
+	display: flex;
+	margin-bottom:20px;
+	line-height: 1;
+}
+.curriculum_list .edu_item .item_info dl:last-child {
+	margin-bottom:0;
+}
+.curriculum_list .edu_item .item_info dl dt {
+	margin-right:20px;
+	color: #6f6f6f;
+}
+.curriculum_list .edu_item .item_info dl dd {
+	margin:0;
+	font-weight:500;
+} 
+/* 교육과정 신청버튼 */
+.curriculum_list .edu_item .btn_edu_apply {
+	position:absolute;
+	right:0;
+	width:180px;
+	height:60px;
+	border-radius: 4px;
+	background: #282828;
+	text-align:center;
+	font-size: 1.8rem;
+	line-height: 60px;
+}
+.curriculum_list .edu_item .btn_edu_apply span {
+	color: #fff;
+}
+@media (max-width: 1400px){
+	.curriculum_list .edu_item .btn_edu_apply {
+		bottom:50px;
+	}
+}
